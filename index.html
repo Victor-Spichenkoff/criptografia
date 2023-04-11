@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Criar Mensagem codificada</h1>
+
+    <h2>Descodificar</h2>
+    <input type="text" placeholder="insira mensagem">
+    <div class="resultado"></div>
+
+    <h2>Cria sua mensagem</h2>
+    <input type="text" placeholder="insira a palavra" id="palavra"> <br>
+    <h4>Configurar Criptografia</h4>
+    <!-- Configuracoes -->
+    <input type="text" placeholder="Onde esconder a chave" list="faixa" id="esconderChave">
+    <datalist id="faixa" >
+        <option value="segundo">Segundo</option>
+        <option value="terceiro">Terceiro</option>
+    </datalist> <br>
+    <input type="number" placeholder="Chave"> <br>
+    <input type="number" placeholder="Número de elementos vazios" id='numerosVazios'>
+    <button>Acicionar</button>
+    <button id="apagar">Apagar Mensagem</button>
+
+    <div id="criptografada">676</div>
+
+    <script src="./criptografia.js"></script>
+    <script src="./gerarMensagem.js"></script>
+</body>
+</html>
