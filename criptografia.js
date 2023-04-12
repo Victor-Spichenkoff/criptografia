@@ -50,7 +50,7 @@ function qualChave(palavra='') {
         return 'erro'
     }
 }
-console.log(qualChave('bzola'))
+// console.log(qualChave('bzola'))
 
 
 //seleciona apenas a palavra, sem a chave e codigo

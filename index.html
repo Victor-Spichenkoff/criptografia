@@ -4,30 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Enigma</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Criar Mensagem codificada</h1>
+    <h1>Criptografia</h1> <br>
 
-    <h2>Descodificar</h2>
+    <!-- <span id="md">+</span><br> -->
+    <h2>Descodificar</h2><br>
     <input type="text" placeholder="insira mensagem">
     <div class="resultado"></div>
+    <button id="decifrar">Decodificar</button> <br>
 
-    <h2>Cria sua mensagem</h2>
-    <input type="text" placeholder="insira a palavra" id="palavra"> <br>
-    <h4>Configurar Criptografia</h4>
+    <p id="resultado">ola</pid>
+
+    <!-- <span id="mc">+</span> -->
+
+    <h2>Criar mensagem</h2> <br>
+    <input type="text" placeholder="Insira a palavra (k=vazio)" id="palavra"> <br>
+    <h4>Configurar Criptografia</h4> <br>
     <!-- Configuracoes -->
-    <input type="text" placeholder="Onde esconder a chave" list="faixa" id="esconderChave">
+    <input type="text" placeholder="Onde esconder a chave" list="faixa" id="esconderChave"> <br>
     <datalist id="faixa" >
-        <option value="segundo">Segundo</option>
-        <option value="terceiro">Terceiro</option>
+        <option value="2">Segundo</option>
+        <option value="3">Terceiro</option>
     </datalist> <br>
-    <input type="number" placeholder="Chave"> <br>
-    <input type="number" placeholder="Número de elementos vazios" id='numerosVazios'>
-    <button>Acicionar</button>
-    <button id="apagar">Apagar Mensagem</button>
+    <input type="number" placeholder="Chave (1-26)" id="chave"> <br>
+    
+    <button id="add">Acicionar</button>
+    <button id="apagar">Apagar Mensagem</button> <br>
 
-    <div id="criptografada">676</div>
+    <div id="criptografada"></div>
 
     <script src="./criptografia.js"></script>
     <script src="./gerarMensagem.js"></script>
