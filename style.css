@@ -6,7 +6,7 @@ body {
     flex-wrap: wrap;
     display: inline-block;
     text-align: center;
-    width: 100vw;
+    width: 96vw;
 }
 
 h1 {
@@ -37,6 +37,7 @@ input {
     padding: 6px;
     font-size: 20px;
     margin: auto;
+    
     
 }
 

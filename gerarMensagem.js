@@ -16,7 +16,7 @@ function getConfig() {
     const esconderChave = document.getElementById('esconderChave').value
     const numerosVazios= document.getElementById('numerosVazios').value
     const chave2 = document.getElementById('chave').value
-    console.log(palavra, esconderChave, numerosVazios, chave2)
+    // console.log(palavra, esconderChave, numerosVazios, chave2)
     return {
         palavra, esconderChave, numerosVazios, chave2
     }
@@ -31,37 +31,45 @@ function apagarMensagem() {
 
 function alterarLetra(letra, chave=0) {
     const posicao = alfa2.indexOf(letra)
-    
-    if(posicao + chave + 1 === 26) {
-        return 's' 
-    } else {
+    if(posicao+chave > 25) {
+        return  alfa2[posicao + chave-26]
+    } else{
         return  alfa2[posicao + chave]
     }
+    
+    // if(posicao + chave + 1 === 26) {
+    //     return 's' 
+    // } else {
+    // }
 }
+
 
 //escolhe uma letra aleatoria para par ou impar
 function pegarLetraOnde(esconderChave) {
     let num
     if(esconderChave==2) {//impar a c
         while (true) {
-            num = aleatorio(0, 25)
-            if(num % 2 === 0) {
+            num = aleatorio(1, 26)
+            if(num % 2=== 0){}
+            else/*(!num % 2 === 0)*/ {
+                // console.log(num,'impar')
                 break
             }
         } 
     } else if (esconderChave == 3) {//par b, d
         while (true) {
-            num = aleatorio(0, 25)
-            console.log(num)
-            if(!num % 2===0) {
+            num = aleatorio(1, 26)
+            if(num % 2=== 0) {
+                // console.log(num, 'par')
                 break
             }
         }
     } else {
         num = 'erro'
     }
-    return alfa2[num]
+    return alfa2[num-1]
 }
+
 
 function pegarLetraChave(chave) {
     return alfa2[chave-1]
@@ -71,9 +79,10 @@ function pegarLetraChave(chave) {
 
 //cria as 3 primeiras, codigo e chave + letra1
 function criptografarPalavra() {
-    let palavra = document.getElementById('palavra').value
-    const esconderChave = document.getElementById('esconderChave').value=='' ? 2 : document.getElementById('esconderChave').value
-    const chave2 = document.getElementById('chave').value=='' ? 1 : Number(document.getElementById('chave').value)
+    let palavra = document.getElementById('palavra').value.toLowerCase()
+    const esconderChave = document.getElementById('esconderChave').value!==2 && document.getElementById('esconderChave').value!==3 ? 2 : Number(document.
+    getElementById('esconderChave').value)
+    const chave2 = document.getElementById('chave').value=='' || document.getElementById('chave').value > 26 ? 1 : Number(document.getElementById('chave').value)
 
 
     // let [palavra, esconderChave, chave2] = getConfig()
@@ -99,7 +108,7 @@ function criptografarPalavra() {
             else if(i==1) {palavra+=separada[0]}//
             else if (i==2) {palavra += letraChave}
             else {palavra += separada[i-2]}
-            console.log(i, palavra)
+            // console.log(i, palavra)
         }
     }
 
@@ -111,6 +120,7 @@ function criptografarPalavra() {
 
 //feito
 apagar.onclick = apagarMensagem
+
 adicionar.onclick = function() {
     let resultPrevio = resultado.innerText
     let palavra = criptografarPalavra()
