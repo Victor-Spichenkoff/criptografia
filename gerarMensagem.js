@@ -80,10 +80,11 @@ function pegarLetraChave(chave) {
 //cria as 3 primeiras, codigo e chave + letra1
 function criptografarPalavra() {
     let palavra = document.getElementById('palavra').value.toLowerCase()
-    const esconderChave = document.getElementById('esconderChave').value!==2 && document.getElementById('esconderChave').value!==3 ? 2 : Number(document.
-    getElementById('esconderChave').value)
-    const chave2 = document.getElementById('chave').value=='' || document.getElementById('chave').value > 26 ? 1 : Number(document.getElementById('chave').value)
 
+    const esconderChave = document.getElementById('esconderChave').value!=2 && document.getElementById('esconderChave').value!=3 ? 2 : Number(document.
+    getElementById('esconderChave').value)
+
+    const chave2 = document.getElementById('chave').value=='' || document.getElementById('chave').value > 26 ||  document.getElementById('chave').value < 1 ? 1 : Number(document.getElementById('chave').value)
 
     // let [palavra, esconderChave, chave2] = getConfig()
     // let [palavra, esconderChave, chave2] = ['ola', 3, 1]//a
