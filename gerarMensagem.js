@@ -24,7 +24,9 @@ function getConfig() {
 
 function apagarMensagem() {
     mensagem = ''
-    resultado.innerHTML = mensagem
+    resultado.innerText = mensagem
+    resultado.value = mensagem
+    contPalavra = 0
 }
 // ola
 // chave? l1 ou chave resto 
@@ -122,10 +124,14 @@ function criptografarPalavra() {
 //feito
 apagar.onclick = apagarMensagem
 
+let contPalavra = 0
 adicionar.onclick = function() {
-    let resultPrevio = resultado.innerText
+    let resultPrevio = resultado.value
     let palavra = criptografarPalavra()
     resultado.innerText = `${resultPrevio} ${palavra}`
+    console.log(resultPrevio + palavra)
+    resultado.value = contPalavra ? `${resultPrevio} ${palavra}` : palavra
+    contPalavra++
 }
 
 

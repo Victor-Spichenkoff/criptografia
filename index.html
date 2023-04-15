@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,9 +33,12 @@
     <button id="add">Acicionar</button>
     <button id="apagar">Apagar Mensagem</button> <br>
 
-    <div id="criptografada"></div>
+    <textarea type="text" id="criptografada" placeholder="Mensagem final"></textarea> <br>
+
+    <button id="copiar" onclick="copiar()"><i><img src="https://img.icons8.com/ios/50/null/copy--v1.png" id="imgCopiar"/><i></button>
 
     <script src="./criptografia.js"></script>
     <script src="./gerarMensagem.js"></script>
+    <script src="copiar.js"></script>
 </body>
 </html>

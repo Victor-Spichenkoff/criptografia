@@ -54,6 +54,18 @@ input:focus {
    
 }
 
+#copiar {
+    margin-bottom:300px;
+
+
+}
+
+
+#imgCopiar{
+    width: 20px;
+    height: 20px;
+}
+
 button {
     border: 0px;
     border-radius: 10px;
@@ -70,4 +82,9 @@ button {
 
 #apagar{
     background: linear-gradient(to right, rgb(197, 56, 56), rgb(231, 1, 1));
+}
+
+#criptografada{
+    text-align: center;
+    height: 27px;
 }
