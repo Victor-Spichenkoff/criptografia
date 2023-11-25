@@ -6,36 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enigma</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://www.icons101.com/icon_ico/id_79379/security.ico" type="image/x-icon">
 </head>
 <body>
-    <h1>Criptografia</h1> <br>
-
-    <!-- <span id="md">+</span><br> -->
-    <h2>Descodificar</h2><br>
-    <input type="text" placeholder="Insira a mensagem" id="mensagem"> <br>
-    <button id="decifrar">Decodificar</button> <br>
-
-    <p id="resultado"></pid>
-
-    <!-- <span id="mc">+</span> -->
-
-    <h2>Criar mensagem</h2> <br>
-    <input type="text" placeholder="Insira a palavra (k=vazio)" id="palavra"> <br>
-    <h4>Configurar Criptografia</h4> <br>
-    <!-- Configuracoes -->
-    <input type="text" placeholder="Onde esconder a chave" list="valores" id="esconderChave"> <br>
-    <datalist id="valores" >
-        <option value="2">Segunda letra</option>
-        <option value="3">Terceira letra</option>
-    </datalist> <br>
-    <input type="number" placeholder="Chave (1-26)" id="chave"> <br>
-    
-    <button id="add">Acicionar</button>
-    <button id="apagar">Apagar Mensagem</button> <br>
-
-    <textarea type="text" id="criptografada" placeholder="Mensagem final"></textarea> <br>
-
-    <button id="copiar" onclick="copiar()"><i><img src="https://img.icons8.com/ios/50/null/copy--v1.png" id="imgCopiar"/><i></button>
+    <div id="tudo">
+        <h1>Criptografia</h1> <br>
+        <!-- <span id="md">+</span><br> -->
+        <h2>Descodificar</h2><br>
+        <input type="text" placeholder="Insira a mensagem" id="mensagem"> <br>
+        <button id="decifrar">Decodificar</button> <br>
+        <p id="resultado"></pid>
+        <!-- <span id="mc">+</span> -->
+        <h2>Criar mensagem</h2> <br>
+        <input type="text" placeholder="Insira a palavra (k=vazio)" id="palavra"> <br>
+        <h4>Configurar Criptografia</h4> <br>
+        <!-- Configuracoes -->
+        <input type="text" placeholder="Onde esconder a chave" list="valores" id="esconderChave"> <br>
+        <datalist id="valores" >
+            <option value="2">Segunda letra</option>
+            <option value="3">Terceira letra</option>
+        </datalist> <br>
+        <input type="number" placeholder="Chave (1-26)" id="chave"> <br>
+        
+        <button id="add">Acicionar</button>
+        <button id="apagar">Apagar Mensagem</button> <br>
+        <textarea type="text" id="criptografada" placeholder="Mensagem final"></textarea> <br>
+        <button id="copiar" onclick="copiar()"><i><img src="https://img.icons8.com/ios/50/null/copy--v1.png" id="imgCopiar"/><i></button>
+    </div>
 
     <script src="./src/criptografia.js"></script>
     <script src="./src/gerarMensagem.js"></script>

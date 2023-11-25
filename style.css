@@ -1,3 +1,9 @@
+/*
+bg image https://cdn.sanity.io/images/tlr8oxjg/production/0e63b756dd8dab308cf9ea3f2e8de3f55619b7a9-1456x816.png?w=3840&q=80&fit=clip&auto=format
+
+https://www.inquiriesjournal.com/article-images/uid-34-1066258177-1226/aa13e0.jpg
+*/
+
 body {
     background: rgb(66,208,161);
     background: radial-gradient(circle, rgba(66,208,161,1) 0%, rgba(55,137,233,1) 100%);
@@ -7,6 +13,21 @@ body {
     display: inline-block;
     text-align: center;
     width: 96vw;
+    max-width: 98vw;
+    background-image: url(https://www.inquiriesjournal.com/article-images/uid-34-1066258177-1226/aa13e0.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background: radial-gradient(circle, rgba(66,208,161,1) 0%, rgba(55,137,233,1) 100%); */
+}
+
+#tudo {
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px black;
+    padding: 30px 60px;
+    width: fit-content;
+    margin: auto;
+    background-color: rgba(82, 82, 82, 0.671)
 }
 
 h1 {
@@ -17,7 +38,7 @@ h1 {
 }
 
 h2 {
-    color: rgb(209, 47, 47);
+    color: rgb(206, 21, 21);
     font-size: 27px;
     font-weight: 900;
     margin-top: 40px;
@@ -55,9 +76,7 @@ input:focus {
 }
 
 #copiar {
-    margin-bottom:300px;
-
-
+    /* margin-bottom:300px; */
 }
 
 
@@ -87,4 +106,29 @@ button {
 #criptografada{
     text-align: center;
     height: 27px;
+}
+
+
+body::-webkit-scrollbar {
+    width: 5px;               /* width of the entire scrollbar */
+  }
+  
+*::-webkit-scrollbar-track {
+    background-color: black;
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: white;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    /* border: 3px solid rgb(255, 166, 0);  */
+}
+
+
+@media (max-width: 747px) {
+    body {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(https://cdn.sanity.io/images/tlr8oxjg/production/0e63b756dd8dab308cf9ea3f2e8de3f55619b7a9-1456x816.png?w=3840&q=80&fit=clip&auto=format);
+    }
 }
