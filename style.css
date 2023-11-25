@@ -13,7 +13,7 @@ body {
     display: inline-block;
     text-align: center;
     width: 96vw;
-    max-width: 98vw;
+    max-width: 100vw;
     background-image: url(https://www.inquiriesjournal.com/article-images/uid-34-1066258177-1226/aa13e0.jpg);
     background-position: center;
     background-size: cover;
@@ -130,5 +130,9 @@ body::-webkit-scrollbar-thumb {
         background-position: center;
         background-repeat: no-repeat;
         background-image: url(https://cdn.sanity.io/images/tlr8oxjg/production/0e63b756dd8dab308cf9ea3f2e8de3f55619b7a9-1456x816.png?w=3840&q=80&fit=clip&auto=format);
+    }
+
+    #tudo {
+        margin: auto;
     }
 }
