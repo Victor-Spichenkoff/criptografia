@@ -134,5 +134,9 @@ body::-webkit-scrollbar-thumb {
 
     #tudo {
         margin: auto;
+        margin-top: 4.5%;
+        margin-bottom: 4.5%;
+        padding: 30px 50px;
+        vertical-align: middle;
     }
 }
