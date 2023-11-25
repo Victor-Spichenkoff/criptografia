@@ -127,6 +127,7 @@ body::-webkit-scrollbar-thumb {
 @media (max-width: 747px) {
     body {
         background-size: cover;
+        background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-image: url(https://cdn.sanity.io/images/tlr8oxjg/production/0e63b756dd8dab308cf9ea3f2e8de3f55619b7a9-1456x816.png?w=3840&q=80&fit=clip&auto=format);
