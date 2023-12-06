@@ -29,7 +29,7 @@
 <br>
 
 <h2>Tecnologias usadas</h2>
-<p>Esse foi meu primeiro projeto com TypeScript, então decidi focar em algo que pudesse usar de bastante lógica. Por ser um porjeto menor e focado na lógica, optei por não utilizar um framework, como react. </p>
+<p>Esse foi meu primeiro projeto com TypeScript, então decidi focar em algo que pudesse usar de bastante lógica. Por ser um projeto menor e focado na lógica, optei por não utilizar um framework, como react. </p>
 
 <br><br>
 
